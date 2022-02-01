@@ -49,6 +49,9 @@ performance in a matter of hours.
 Summary:        Development files for NVIDIA Performance Primitives libraries.
 Requires:       %{name}%{_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
 Conflicts:      %{name}-devel-%{major_package_version} < %{?epoch:%{epoch}:}%{version}
+# Drop in 11.7:
+Provides:       cuda-npp-devel = %{?epoch:%{epoch}:}%{version}-%{release}
+Obsoletes:      cuda-npp-devel < %{?epoch:%{epoch}:}%{version}-%{release}
 
 %description devel
 This package provides development files for the NVIDIA Performance Primitives
@@ -57,6 +60,9 @@ libraries.
 %package static
 Summary:        Static libraries for NVIDIA Performance Primitives
 Requires:       %{name}-devel%{_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
+# Drop in 11.7:
+Provides:       cuda-npp-static = %{?epoch:%{epoch}:}%{version}-%{release}
+Obsoletes:      cuda-npp-static < %{?epoch:%{epoch}:}%{version}-%{release}
 
 %description static
 This package contains static libraries for NVIDIA Performance Primitives
