@@ -6,7 +6,7 @@
 
 Name:           libnpp
 Epoch:          1
-Version:        11.7.3.21
+Version:        11.7.4.75
 Release:        1%{?dist}
 Summary:        NVIDIA Performance Primitives libraries
 License:        CUDA Toolkit
@@ -164,6 +164,9 @@ sed -i \
 %{_libdir}/libnpps_static.a
 
 %changelog
+* Sun Sep 04 2022 Simone Caronni <negativo17@gmail.com> - 1:11.7.4.75-1
+- Update to 11.7.4.75.
+
 * Thu Jun 23 2022 Simone Caronni <negativo17@gmail.com> - 1:11.7.3.21-1
 - Update to 11.7.3.21.
 
